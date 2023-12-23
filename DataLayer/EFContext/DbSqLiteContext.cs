@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Sqlite;
 
 namespace DataLayer.EFContext
 {
-    public class DbSqLiteContext: ADbContext
+    public class DbSqLiteContext: ADbContext, IDbContext
     {
         public string DbPath; 
 
