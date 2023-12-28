@@ -1,4 +1,4 @@
-﻿using DataLayer;
+﻿//using DataLayer;
 using DataLayer.EFContext;
 using DataLayer.ServiceCode;
 
@@ -12,11 +12,12 @@ Console.WriteLine($"Path = {db.DbPath}");
 
 var seeder = new Seeder(db);
 
-seeder.Seed();
-/*seeder.PrintUsers();
-seeder.PrintCars();*/
+seeder.SeedUser();
+seeder.SeedCar();
+//seeder.SeedDistances();
+//seeder.SeedService();
 seeder.printAllInfo();
-Console.WriteLine("Ждем команду перед удалением данных");
+Console.WriteLine("Ждем нажатия Enter ..");
 Console.ReadLine();
-seeder.DeleteData();
+//seeder.DeleteData();
 

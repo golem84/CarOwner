@@ -86,7 +86,7 @@ namespace DataLayer.Migrations
                     ServiceId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Date = table.Column<DateOnly>(type: "TEXT", nullable: false),
-                    Distance = table.Column<int>(type: "INTEGER", nullable: false),
+                    DistanceValue = table.Column<int>(type: "INTEGER", nullable: false),
                     SType = table.Column<byte>(type: "INTEGER", nullable: false),
                     Description = table.Column<string>(type: "TEXT", nullable: false),
                     PartsPrice = table.Column<decimal>(type: "TEXT", nullable: false),
